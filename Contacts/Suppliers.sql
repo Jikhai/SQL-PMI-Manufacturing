@@ -1,0 +1,4 @@
+SELECT CTCTTYPCPT as "Nature",CLCTNOM as "Société"  ,CLCTCP as "Code Postal",CLCTVILLE "Ville", CTCTCIVILI as "civilité", CTCTNOM as "Nom", CTCTPRENOM as "Prénom",CTCTMAIL1 as "Mail", CTCTNOTEL1 as "Tel"  
+FROM CONTACT
+LEFT JOIN FOURNIS ON CTCTCOMPTE=CLKTCODE 
+WHERE CTKTSOC=/*Society number*/ AND CLKTSOC=/*society number*/ AND CTCTTYPCPT='F';

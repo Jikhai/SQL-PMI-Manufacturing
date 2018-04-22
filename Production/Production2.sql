@@ -1,0 +1,6 @@
+SELECT ECCTNOM "Client", ECKTNUMERO "N°Commande",LCCTREFCDE "Ref.Commande", ECCJCRE "Date",LCCTCODART "Code Article", LCCTLIB01 "Libellé 1", LCCTLIB02 "Libellé 2",
+LCCTCONDIT "Conditionnement",LCCNQTECDE "Quantité commandée", LCCSDELEXP "Délai livraison" 
+FROM ECOMCLI 
+LEFT JOIN LCOMCLI ON ECKTNUMERO=LCKTNUMERO
+LEFT JOIN ARTICLE ON LCCTCODART=ARKTCODART
+WHERE ECKTSOC=/*society number*/  AND LCKTSOC=/*society number*/  AND ARKTSOC=/*society number*/ AND ARCTSECART=/*activity*/;
