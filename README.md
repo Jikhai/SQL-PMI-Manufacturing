@@ -6,3 +6,5 @@ This repository is mostly for backup purposes. It will contain queries made in o
 While the database structure is the same for most installations of this software, i do not guarantee that those will work on any other database, for this ERP, any other ERP or any kind of database.
 
 You are however free to use those queries in any way you please.
+
+Please note that i won't bother translating everything, as it serves no purpose.
